@@ -1,0 +1,24 @@
+[tool.poetry]
+name        = "iot-manager"
+version     = "0.1.0"
+description = "In-memory IoT manager for dwellings, hubs, and devices"
+readme      = "README.md"
+authors     = ["Jefferson Pita <jeffersonpita@yahoo.com.br>"]
+
+packages = [
+  { include = "classes", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.dev-dependencies]
+pytest      = "^7.0"
+pylint      = "^3.0"
+black       = "^24.3"
+isort       = "^5.12"
+ruff        = "^0.0"
+
+[build-system]
+requires       = ["poetry-core>=1.0.0"]
+build-backend  = "poetry.core.masonry.api"
