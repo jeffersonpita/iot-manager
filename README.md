@@ -19,7 +19,6 @@ poetry install
 ```
 
 ## Usage
-As a library
 
 ```bash
 from classes.iot_manager import IoTManager
